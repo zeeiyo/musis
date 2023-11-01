@@ -53,7 +53,13 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
+                text="Menfes", url=f"https://t.me/Pesan_Ku"
+            ),
+            InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
+            ),
+            InlineKeyboardButton(
+                text="Store", url=f"https://t.me/euonstore"
             )
         ],
     ]
@@ -75,8 +81,14 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(
+                text="Menfes", url=f"https://t.me/Pesan_Ku"
+            ),
+            InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
+            InlineKeyboardButton(
+                text="Store", url=f"https://t.me/euonstore"
+            )
         ],
     ]
     return buttons
