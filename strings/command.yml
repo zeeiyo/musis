@@ -6,9 +6,8 @@
 # Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
 # All rights reserved.
-#
-
-
+#donasi
+DONASI_COMMAND : ["donasi"]
 # Commands in Every Language
 
 # Bot Commands
