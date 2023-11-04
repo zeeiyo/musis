@@ -15,7 +15,7 @@ answer = []
 
 answer.extend(
     [
-      InlineQueryResultArticle(
+        InlineQueryResultArticle(
             title="Donasi",
             description=f"Penggalangan Donasi Scan Qris",
             thumb_url="https://telegra.ph/file/c0a1c789def7b93f13745.png",
