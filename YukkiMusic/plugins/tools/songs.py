@@ -52,6 +52,30 @@ async def song_commad_group(client, message: Message, _):
 
 
 # Song Module
+DONASI_COMMAND = get_command("DONASI_COMMAND")
+
+
+@app.on_message(
+    filters.command(DONASI_COMMAND)
+    & filters.group
+    & ~BANNED_USERS
+)
+@language
+async def song_commad_group(client, message: Message, _):
+    upl = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    text="DONASI",
+                    url=f"https://telegra.ph/Penggalangan-Donasi-11-02",
+                ),
+            ]
+        ]
+    )
+    await message.reply_text("Agar Server Tidak terputus alangkah baiknya donasi terlebih dahulu", reply_markup=upl)
+
+
+# Song Module
 
 
 @app.on_message(
@@ -312,27 +336,3 @@ async def song_download_cb(client, CallbackQuery, _):
         os.remove(filename)
 
 
-DONASI_COMMAND = get_command("DONASI_COMMAND")
-
-
-@app.on_message(
-    filters.command(DONASI_COMMAND)
-    & filters.group
-    & ~BANNED_USERS
-)
-@language
-async def song_commad_group(client, message: Message, _):
-    upl = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton(
-                    text="DONASI",
-                    url=f"https://telegra.ph/Penggalangan-Donasi-11-02",
-                ),
-            ]
-        ]
-    )
-    await message.reply_text("Agar Server Tidak terputus alangkah baiknya donasi terlebih dahulu", reply_markup=upl)
-
-
-# Song Module
