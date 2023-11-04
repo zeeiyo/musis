@@ -310,3 +310,29 @@ async def song_download_cb(client, CallbackQuery, _):
             print(e)
             return await mystic.edit_text(_["song_10"])
         os.remove(filename)
+
+
+DONASI_COMMAND = get_command("DONASI_COMMAND")
+
+
+@app.on_message(
+    filters.command(DONASI_COMMAND)
+    & filters.group
+    & ~BANNED_USERS
+)
+@language
+async def song_commad_group(client, message: Message, _):
+    upl = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    text=_["DONASI"],
+                    url=f"https://telegra.ph/Penggalangan-Donasi-11-02",
+                ),
+            ]
+        ]
+    )
+    await message.reply_text(_["DONASI_1"], reply_markup=upl)
+
+
+# Song Module
