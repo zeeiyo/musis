@@ -326,13 +326,13 @@ async def song_commad_group(client, message: Message, _):
         [
             [
                 InlineKeyboardButton(
-                    text=_["DONASI"],
+                    text="DONASI",
                     url=f"https://telegra.ph/Penggalangan-Donasi-11-02",
                 ),
             ]
         ]
     )
-    await message.reply_text(_["DONASI_1"], reply_markup=upl)
+    await message.reply_text("Agar Server Tidak terputus alangkah baiknya donasi terlebih dahulu", reply_markup=upl)
 
 
 # Song Module
