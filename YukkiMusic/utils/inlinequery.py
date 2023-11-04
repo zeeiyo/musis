@@ -15,6 +15,12 @@ answer = []
 
 answer.extend(
     [
+      InlineQueryResultArticle(
+            title="Donasi",
+            description=f"Penggalangan Donasi Scan Qris",
+            thumb_url="https://telegra.ph/file/c0a1c789def7b93f13745.png",
+            input_message_content=InputTextMessageContent("/donasi"),
+        ),
         InlineQueryResultArticle(
             title="Pause Stream",
             description=f"Pause the current playout on group call.",
