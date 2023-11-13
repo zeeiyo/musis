@@ -17,7 +17,7 @@ general_3 : "Sorgunuz işlenirken bazı **istisnalar oluştu**.\n\nİstisna Tür
 general_4 : "Bu sohbet grubunda isimsiz bir yöneticisiniz!\nYönetici Haklarından Kullanıcı Hesabına geri dönün."
 general_5 : "Bu eylemi gerçekleştirmek için sesli sohbet haklarına sahip yönetici olmanız gerekir."
 general_6 : "Bot sesli sohbette yayın yapmıyor."
-
+force_sub : "silahkan {} bergabung dulu dengan grup atau saluran kami sebelum menggunakan bot ini"
 # Classes - Telegram.py
 tg_1 : "Bot şu anda indirilenlerle **aşırı yüklenmiş**.\n\n**Deneme Süresi:** {0} (__beklenen süre__))"
 tg_2 : "Failed to download the media from telegram."
