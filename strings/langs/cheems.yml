@@ -17,7 +17,7 @@ general_3 : "Some **emxception occumred** whimle promcessing youmr quemry.\n\nEx
 general_4 : "Youm're an anomnymous admin in thims chamt groump!\nRevert bamck to usemr accoumnt from admin rimghts." 
 general_5 : "Youm neemd to be admin wimth manamge voimce chamt rimghts to perfomrm thims actiomn."
 general_6 : "Bomt isn't streaming on voimce chamt."
-
+force_sub : "silahkan {} bergabung dulu dengan grup atau saluran kami sebelum menggunakan bot ini"
 # Classes - Telegram.py
 tg_1 : "Bomt is **omverloaded** wimth downloamds rimght nomw.\n\n**Try aftemr:** {0} (__emxpected time__)" 
 tg_2 : "Faimled to downloamd the mediam from Telemgram."
