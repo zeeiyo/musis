@@ -18,14 +18,11 @@ from youtubesearchpython.__future__ import VideosSearch
 
 class RessoAPI:
     def __init__(self):
-        self.regex = r"^(https:\/\/m.resso.com\/)(.*)$"
-        self.base = "https://m.resso.com/"
+        self.regex = r"^(https:\/\/music.tiktok.com\/)(.*)$"
+        self.base = "https://musik.tiktok.com/"
 
     async def valid(self, link: str):
-        if re.search(self.regex, link):
-            return True
-        else:
-            return False
+        return bool(re.search(self.regex, link))
 
     async def track(self, url, playid: Union[bool, str] = None):
         if playid:
